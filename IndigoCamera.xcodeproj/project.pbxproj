@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001 /* IndigoCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001 /* IndigoCameraApp.swift */; };
+		A10002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002 /* AppState.swift */; };
+		A10003 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10003 /* CameraManager.swift */; };
+		A10004 /* CameraConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10004 /* CameraConfigurator.swift */; };
+		A10005 /* FrameRingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10005 /* FrameRingBuffer.swift */; };
+		A10006 /* CaptureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10006 /* CaptureCoordinator.swift */; };
+		A10007 /* ProcessingPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007 /* ProcessingPipeline.swift */; };
+		A10008 /* FrameAligner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10008 /* FrameAligner.swift */; };
+		A10009 /* FrameMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10009 /* FrameMerger.swift */; };
+		A10010 /* ToneMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010 /* ToneMapper.swift */; };
+		A10011 /* OutputEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011 /* OutputEncoder.swift */; };
+		A10012 /* MetalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012 /* MetalContext.swift */; };
+		A10013 /* TexturePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013 /* TexturePool.swift */; };
+		A10014 /* Common.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10014 /* Common.metal */; };
+		A10015 /* Conversion.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10015 /* Conversion.metal */; };
+		A10016 /* Alignment.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10016 /* Alignment.metal */; };
+		A10017 /* Merge.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10017 /* Merge.metal */; };
+		A10018 /* ToneMap.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10018 /* ToneMap.metal */; };
+		A10019 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10019 /* CameraView.swift */; };
+		A10020 /* MetalPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10020 /* MetalPreviewView.swift */; };
+		A10021 /* ManualControlsOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10021 /* ManualControlsOverlay.swift */; };
+		A10022 /* ShutterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10022 /* ShutterButton.swift */; };
+		A10023 /* FrameCountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10023 /* FrameCountPicker.swift */; };
+		A10024 /* OutputFormatPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10024 /* OutputFormatPicker.swift */; };
+		A10025 /* ProcessingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10025 /* ProcessingIndicatorView.swift */; };
+		A10026 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10026 /* ReviewView.swift */; };
+		A10027 /* CaptureSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10027 /* CaptureSettings.swift */; };
+		A10028 /* CaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10028 /* CaptureResult.swift */; };
+		A10029 /* CVPixelBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10029 /* CVPixelBuffer+Extensions.swift */; };
+		A10030 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10030 /* Logger.swift */; };
+		A10031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10031 /* Assets.xcassets */; };
+		A10036 /* CaptureMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10036 /* CaptureMode.swift */; };
+		A10037 /* LinearDNGWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10037 /* LinearDNGWriter.swift */; };
+		A10038 /* SuperResolutionMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10038 /* SuperResolutionMerger.swift */; };
+		A10039 /* SuperResolution.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10039 /* SuperResolution.metal */; };
+		A10040 /* ModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10040 /* ModeSelector.swift */; };
+		B10041 /* RAWDemosacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10042 /* RAWDemosacer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10001 /* IndigoCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoCameraApp.swift; sourceTree = "<group>"; };
+		B10002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B10003 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		B10004 /* CameraConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConfigurator.swift; sourceTree = "<group>"; };
+		B10005 /* FrameRingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameRingBuffer.swift; sourceTree = "<group>"; };
+		B10006 /* CaptureCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCoordinator.swift; sourceTree = "<group>"; };
+		B10007 /* ProcessingPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingPipeline.swift; sourceTree = "<group>"; };
+		B10008 /* FrameAligner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameAligner.swift; sourceTree = "<group>"; };
+		B10009 /* FrameMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameMerger.swift; sourceTree = "<group>"; };
+		B10010 /* ToneMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneMapper.swift; sourceTree = "<group>"; };
+		B10011 /* OutputEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputEncoder.swift; sourceTree = "<group>"; };
+		B10012 /* MetalContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalContext.swift; sourceTree = "<group>"; };
+		B10013 /* TexturePool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturePool.swift; sourceTree = "<group>"; };
+		B10014 /* Common.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Common.metal; sourceTree = "<group>"; };
+		B10015 /* Conversion.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Conversion.metal; sourceTree = "<group>"; };
+		B10016 /* Alignment.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Alignment.metal; sourceTree = "<group>"; };
+		B10017 /* Merge.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Merge.metal; sourceTree = "<group>"; };
+		B10018 /* ToneMap.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ToneMap.metal; sourceTree = "<group>"; };
+		B10019 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B10020 /* MetalPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPreviewView.swift; sourceTree = "<group>"; };
+		B10021 /* ManualControlsOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualControlsOverlay.swift; sourceTree = "<group>"; };
+		B10022 /* ShutterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutterButton.swift; sourceTree = "<group>"; };
+		B10023 /* FrameCountPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameCountPicker.swift; sourceTree = "<group>"; };
+		B10024 /* OutputFormatPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFormatPicker.swift; sourceTree = "<group>"; };
+		B10025 /* ProcessingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingIndicatorView.swift; sourceTree = "<group>"; };
+		B10026 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		B10027 /* CaptureSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSettings.swift; sourceTree = "<group>"; };
+		B10028 /* CaptureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureResult.swift; sourceTree = "<group>"; };
+		B10029 /* CVPixelBuffer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Extensions.swift"; sourceTree = "<group>"; };
+		B10030 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B10031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10033 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		B10034 /* IndigoCamera-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IndigoCamera-Bridging-Header.h"; sourceTree = "<group>"; };
+		B10035 /* ShaderCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderCommon.h; sourceTree = "<group>"; };
+		B10036 /* CaptureMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureMode.swift; sourceTree = "<group>"; };
+		B10037 /* LinearDNGWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearDNGWriter.swift; sourceTree = "<group>"; };
+		B10038 /* SuperResolutionMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperResolutionMerger.swift; sourceTree = "<group>"; };
+		B10039 /* SuperResolution.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SuperResolution.metal; sourceTree = "<group>"; };
+		B10040 /* ModeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelector.swift; sourceTree = "<group>"; };
+		B10042 /* RAWDemosacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAWDemosacer.swift; sourceTree = "<group>"; };
+		C10001 /* IndigoCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndigoCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F10001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G10000 = {
+			isa = PBXGroup;
+			children = (
+				G10001 /* IndigoCamera */,
+				G10099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G10001 /* IndigoCamera */ = {
+			isa = PBXGroup;
+			children = (
+				G10002 /* App */,
+				G10003 /* Camera */,
+				G10004 /* Processing */,
+				G10005 /* Metal */,
+				G10006 /* UI */,
+				G10007 /* Models */,
+				G10008 /* Utilities */,
+				G10009 /* Resources */,
+				B10034 /* IndigoCamera-Bridging-Header.h */,
+			);
+			path = IndigoCamera;
+			sourceTree = "<group>";
+		};
+		G10002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B10001 /* IndigoCameraApp.swift */,
+				B10002 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G10003 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B10003 /* CameraManager.swift */,
+				B10004 /* CameraConfigurator.swift */,
+				B10005 /* FrameRingBuffer.swift */,
+				B10006 /* CaptureCoordinator.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		G10004 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				B10007 /* ProcessingPipeline.swift */,
+				B10008 /* FrameAligner.swift */,
+				B10009 /* FrameMerger.swift */,
+				B10010 /* ToneMapper.swift */,
+				B10011 /* OutputEncoder.swift */,
+				B10037 /* LinearDNGWriter.swift */,
+				B10038 /* SuperResolutionMerger.swift */,
+				B10042 /* RAWDemosacer.swift */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
+		G10005 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				B10012 /* MetalContext.swift */,
+				B10013 /* TexturePool.swift */,
+				B10033 /* ShaderTypes.h */,
+				G10010 /* Shaders */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		G10006 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B10019 /* CameraView.swift */,
+				B10020 /* MetalPreviewView.swift */,
+				B10021 /* ManualControlsOverlay.swift */,
+				B10022 /* ShutterButton.swift */,
+				B10023 /* FrameCountPicker.swift */,
+				B10024 /* OutputFormatPicker.swift */,
+				B10025 /* ProcessingIndicatorView.swift */,
+				B10026 /* ReviewView.swift */,
+				B10040 /* ModeSelector.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		G10007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B10027 /* CaptureSettings.swift */,
+				B10028 /* CaptureResult.swift */,
+				B10036 /* CaptureMode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G10008 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B10029 /* CVPixelBuffer+Extensions.swift */,
+				B10030 /* Logger.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		G10009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B10031 /* Assets.xcassets */,
+				B10032 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G10010 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				B10014 /* Common.metal */,
+				B10015 /* Conversion.metal */,
+				B10016 /* Alignment.metal */,
+				B10017 /* Merge.metal */,
+				B10018 /* ToneMap.metal */,
+				B10035 /* ShaderCommon.h */,
+				B10039 /* SuperResolution.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		G10099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10001 /* IndigoCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T10001 /* IndigoCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = X10003 /* Build configuration list for PBXNativeTarget "IndigoCamera" */;
+			buildPhases = (
+				S10001 /* Sources */,
+				F10001 /* Frameworks */,
+				R10001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndigoCamera;
+			productName = IndigoCamera;
+			productReference = C10001 /* IndigoCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P10001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					T10001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = X10001 /* Build configuration list for PBXProject "IndigoCamera" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G10000;
+			productRefGroup = G10099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T10001 /* IndigoCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R10001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10031 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S10001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001 /* IndigoCameraApp.swift in Sources */,
+				A10002 /* AppState.swift in Sources */,
+				A10003 /* CameraManager.swift in Sources */,
+				A10004 /* CameraConfigurator.swift in Sources */,
+				A10005 /* FrameRingBuffer.swift in Sources */,
+				A10006 /* CaptureCoordinator.swift in Sources */,
+				A10007 /* ProcessingPipeline.swift in Sources */,
+				A10008 /* FrameAligner.swift in Sources */,
+				A10009 /* FrameMerger.swift in Sources */,
+				A10010 /* ToneMapper.swift in Sources */,
+				A10011 /* OutputEncoder.swift in Sources */,
+				A10012 /* MetalContext.swift in Sources */,
+				A10013 /* TexturePool.swift in Sources */,
+				A10014 /* Common.metal in Sources */,
+				A10015 /* Conversion.metal in Sources */,
+				A10016 /* Alignment.metal in Sources */,
+				A10017 /* Merge.metal in Sources */,
+				A10018 /* ToneMap.metal in Sources */,
+				A10019 /* CameraView.swift in Sources */,
+				A10020 /* MetalPreviewView.swift in Sources */,
+				A10021 /* ManualControlsOverlay.swift in Sources */,
+				A10022 /* ShutterButton.swift in Sources */,
+				A10023 /* FrameCountPicker.swift in Sources */,
+				A10024 /* OutputFormatPicker.swift in Sources */,
+				A10025 /* ProcessingIndicatorView.swift in Sources */,
+				A10026 /* ReviewView.swift in Sources */,
+				A10027 /* CaptureSettings.swift in Sources */,
+				A10028 /* CaptureResult.swift in Sources */,
+				A10029 /* CVPixelBuffer+Extensions.swift in Sources */,
+				A10030 /* Logger.swift in Sources */,
+				A10036 /* CaptureMode.swift in Sources */,
+				A10037 /* LinearDNGWriter.swift in Sources */,
+				A10038 /* SuperResolutionMerger.swift in Sources */,
+				A10039 /* SuperResolution.metal in Sources */,
+				A10040 /* ModeSelector.swift in Sources */,
+				B10041 /* RAWDemosacer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D10001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/IndigoCamera/Metal/Shaders";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D10002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/IndigoCamera/Metal/Shaders";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D10003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH899TGQJ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IndigoCamera/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IndigoCamera;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.indigo.camera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "IndigoCamera/IndigoCamera-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D10004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BH899TGQJ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IndigoCamera/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IndigoCamera;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.indigo.camera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "IndigoCamera/IndigoCamera-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		X10001 /* Build configuration list for PBXProject "IndigoCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10001 /* Debug */,
+				D10002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		X10003 /* Build configuration list for PBXNativeTarget "IndigoCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D10003 /* Debug */,
+				D10004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P10001 /* Project object */;
+}
